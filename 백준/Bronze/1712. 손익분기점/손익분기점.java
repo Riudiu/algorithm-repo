@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
-	
+public class Main {	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		
 		int a = scan.nextInt();    // 고정 비용
 		int b = scan.nextInt();    // 가변 비용
 		int c = scan.nextInt();    // 노트북의 가격
