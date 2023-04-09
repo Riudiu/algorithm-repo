@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);   
 		int sum = 0;      // 총점을 담는 변수 sum
