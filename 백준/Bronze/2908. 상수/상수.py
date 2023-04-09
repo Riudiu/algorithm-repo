@@ -1,6 +1,4 @@
-num_list = list(input().split())
-first = num_list[0]
-second = num_list[1]
+first, second = input().split()
 
 first_list = list(first)
 second_list = list(second)
