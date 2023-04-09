@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		Scanner scan = new Scanner(System.in);
 		int num1 = scan.nextInt();
+		
 		String strNum1 = String.valueOf(num1);
 		int num2 = scan.nextInt();
 		String strNum2 = String.valueOf(num2);
@@ -21,6 +20,5 @@ public class Main {
 		} else {
 			System.out.println(rNum2);
 		}
-	
 	}
 }
