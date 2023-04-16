@@ -2,19 +2,19 @@ import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-array = list(map(int, input().split()))
+tree = list(map(int, input().split()))
 
 start = 0
-end = max(array)
+end = max(tree)
 
 result = 0
 while start <= end:
     total = 0
     mid = (start + end) // 2
 
-    for a in array:
-        if a > mid:
-            total += (a - mid)
+    for t in tree:
+        if t > mid:
+            total += (t - mid)
 
     if total < M:
         end = mid - 1
