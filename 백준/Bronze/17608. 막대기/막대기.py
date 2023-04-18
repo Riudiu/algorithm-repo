@@ -11,9 +11,6 @@ class Stack:
     def pop(self):
         return self.arr.pop()
     
-    def peek(self):
-        return self.arr[-1]
-    
     def size(self):
         return len(self.arr)
     
