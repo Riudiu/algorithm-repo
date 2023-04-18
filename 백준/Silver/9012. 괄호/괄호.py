@@ -11,28 +11,30 @@ class Stack:
     def pop(self):
         return self.arr.pop()
     
+    def size(self):
+        return len(self.arr)
+    
 def check_VPS(str):
     stack = Stack()
 
     for c in str:
-        stack.push(c)
-    length = len(stack.arr)
-
-    PS_right = 0
-    for _ in range(0, length):
-        if(PS_right < 0): break
-        pop_c = stack.pop()
-
-        if pop_c == ')':
-            PS_right += 1
+        if c == '(':
+            stack.push(c)
         else:
-            PS_right -= 1 
+            # 스택 비어있을 때 ')' 괄호가 들어오면 NO 출력
+            if stack.size() == 0:
+                print('NO')
+                return
+            # 스택에 '(' 괄호가 있으면 해당 괄호 꺼내기
+            else:
+                stack.pop()
 
-    if PS_right == 0:
-        print('YES')
-    else:
+    # 반복문 종료 후에도 스택에 '(' 괄호가 남아있으면 NO 출력
+    if stack.size() > 0:
         print('NO')
-
+    else: 
+        print('YES')
+            
 if __name__== "__main__":
     T = int(input())
     arr = [input().strip() for _ in range(0, T)]
