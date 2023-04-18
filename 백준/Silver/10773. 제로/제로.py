@@ -11,19 +11,17 @@ class Stack:
     def pop(self):
         return self.arr.pop()
     
+    def getSum(self):
+        return sum(self.arr)
+    
 K = int(input())
 stack = Stack() 
-answer = 0
 
 for _ in range(0, K):
     n = int(input())
-
     if n == 0:
         stack.pop()
     else:
         stack.push(n)
 
-for value in stack.arr:
-    answer += value
-
-print(answer)
+print(stack.getSum())
