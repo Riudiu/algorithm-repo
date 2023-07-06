@@ -9,6 +9,9 @@ console.log(arr);
 console.log(arr2);
 console.log(arr3);
 
+arr = new Array('apple', 'banana', 'cherry');
+console.log(arr);
+
 // concat() - 여러 개의 배열을 이어 붙여서 합친 결과를 반환 / O(N)
 let arr4 = [1, 2, 3, 4, 5];
 let arr5 = [6, 7, 8, 9, 10];
