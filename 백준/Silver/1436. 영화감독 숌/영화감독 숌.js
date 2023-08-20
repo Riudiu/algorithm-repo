@@ -11,12 +11,11 @@ const arr = Array(267 * 10000)
   .fill()
   .map((v, i) => i + 1);
 
-const end = "666";
 let i = 0;
 let ans = 0;
 
 for (let value of arr) {
-  if (String(value).includes(end)) i++;
+  if (String(value).includes("666")) i++;
   if (N === i) {
     ans = value;
     break;
