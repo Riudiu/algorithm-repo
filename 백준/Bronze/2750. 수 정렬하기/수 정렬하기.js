@@ -8,4 +8,7 @@ const input = fs
 
 input.shift();
 const sorted = input.sort((a, b) => a - b);
-for (let value of sorted) console.log(value);
+
+let ans = "";
+for (let value of sorted) ans += value + "\n";
+console.log(ans);
